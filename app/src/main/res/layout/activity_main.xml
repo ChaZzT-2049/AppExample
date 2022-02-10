@@ -23,19 +23,22 @@
     <EditText
         android:id="@+id/Nombre"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:autofillHints="1"
+        android:background="@color/black"
         android:backgroundTint="#090909"
         android:hint="@string/nombra_a_tu_pou"
         android:inputType="text"
-        android:minHeight="48dp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.24" />
+        app:layout_constraintVertical_bias="0.236"
+        tools:ignore="TextContrastCheck" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -54,7 +57,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="2"
-            android:background="#A617E0"
+            android:background="#ED0621"
+            android:backgroundTint="#E60A0A"
             android:text="@string/alimentar"
             android:visibility="visible"
             tools:ignore="ButtonStyle" />
@@ -65,14 +69,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#A617E0"
+            android:background="#17D9E0"
+            android:backgroundTint="#00BCD4"
             android:text="@string/dar_agua"
             android:visibility="visible"
-            tools:ignore="ButtonStyle" />
+            tools:ignore="ButtonStyle,TextContrastCheck" />
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/pou"
         android:layout_width="192dp"
         android:layout_height="180dp"
         android:contentDescription="@string/poou"
@@ -84,5 +89,31 @@
         app:srcCompat="@mipmap/pou"
         tools:layout_editor_absoluteX="101dp"
         tools:layout_editor_absoluteY="203dp" />
+
+    <ImageView
+        android:id="@+id/bagua"
+        android:layout_width="80dp"
+        android:layout_height="170dp"
+        android:contentDescription="@string/Des"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.776"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.606"
+        app:srcCompat="@drawable/agua" />
+
+    <ImageView
+        android:id="@+id/comida"
+        android:layout_width="106dp"
+        android:layout_height="90dp"
+        android:contentDescription="@string/Dees"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.591"
+        app:srcCompat="@drawable/hamburguesa" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
